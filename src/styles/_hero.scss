@@ -1,0 +1,60 @@
+@use 'variaveis';
+
+.hero{
+    padding: 0.6vw;
+    min-height: 70vh;
+    background-image: url(../images/hero_desktop.jpeg);
+    text-align: center;
+    background-size: cover;
+
+    &__content{
+        max-width: 640px;
+
+        &__branding{
+            max-width: 250px;
+            margin: 60px auto 17px;
+        }
+
+        .title--small{
+            margin-bottom: 34px;
+            text-align: center;
+        }
+
+        p{
+            margin-bottom: 20px;
+
+            .link-text{
+                text-align: center;
+            }
+
+           
+        }
+
+        &__pacotes{
+            display: flex;
+            justify-content: space-between;
+
+            &__pacote{
+                width: 50%;
+
+                img{
+                    max-height: 60px;
+                }
+
+                button{
+                    display: block;
+                    width: 80%;
+                    height: 45px;
+                    font-size: 15px;
+                    color: variaveis.$corDoTestoSegundario;
+                    background-color: #6421ff;
+                    text-transform: uppercase;
+                    border-radius: 4px;
+                    margin-top: 2vw;
+                    margin-bottom: 8px;
+                    margin-left: 47px;
+                }    
+            }
+        }        
+    }
+}
